@@ -1,159 +1,208 @@
-import { Code, Coffee, Star, Zap, GitHub, Mail, Award, Users } from 'react-feather';
+import { Code, GitHub, Mail, Award, Users, Briefcase } from 'react-feather';
 
 const ComingSoon = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-primary to-secondary">
+    <div className="min-h-screen bg-slate-900">
       {/* Hero Section */}
-      <div className="h-screen flex items-center justify-center p-4">
+      <div className="min-h-screen flex items-center justify-center px-4 py-12 bg-gradient-to-b from-slate-900 to-slate-800">
         <div className="text-center max-w-4xl mx-auto">
-          <div className="mb-8">
-            <div className="flex justify-center mb-6">
-              <div className="p-6 bg-base-100 rounded-full shadow-xl">
-                <Code size={64} className="text-primary" />
+          <div className="mb-12">
+            <div className="flex justify-center mb-8">
+              <div className="w-20 h-20 bg-blue-600 rounded-2xl flex items-center justify-center shadow-xl">
+                <Code size={40} className="text-white" />
               </div>
             </div>
-            <h1 className="text-7xl font-bold text-base-100 mb-6">
-              Hire Ezekiel Lopez
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
+              Ezekiel Lopez
             </h1>
-            <p className="text-2xl text-base-100/90 mb-8 max-w-2xl mx-auto leading-relaxed">
-              Full-Stack Software Engineer ready to solve your toughest challenges and build exceptional products
+            <h2 className="text-xl sm:text-2xl lg:text-3xl text-blue-400 font-semibold mb-8">
+              Full-Stack Software Engineer
+            </h2>
+            <p className="text-lg sm:text-xl text-slate-300 mb-12 max-w-2xl mx-auto leading-relaxed">
+              Ready to solve your toughest challenges and build exceptional products that drive real business value.
             </p>
           </div>
 
-          <div className="flex justify-center space-x-12 mb-12">
-            <div className="flex flex-col items-center">
-              <div className="p-4 bg-base-100/20 rounded-full mb-3">
-                <Zap size={32} className="text-base-100" />
-              </div>
-              <span className="text-base-100/90 font-semibold">Fast Learner</span>
-            </div>
-            <div className="flex flex-col items-center">
-              <div className="p-4 bg-base-100/20 rounded-full mb-3">
-                <Award size={32} className="text-base-100" />
-              </div>
-              <span className="text-base-100/90 font-semibold">Problem Solver</span>
-            </div>
-            <div className="flex flex-col items-center">
-              <div className="p-4 bg-base-100/20 rounded-full mb-3">
-                <Users size={32} className="text-base-100" />
-              </div>
-              <span className="text-base-100/90 font-semibold">Team Player</span>
-            </div>
+          <div className="flex flex-col sm:flex-row justify-center gap-4 sm:gap-6 mb-16">
+            <a 
+              href="mailto:ezekiel.lopez@example.com" 
+              className="inline-flex items-center justify-center px-8 py-4 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition-colors duration-200 shadow-lg"
+            >
+              <Mail size={20} className="mr-2" />
+              Get In Touch
+            </a>
+            <a 
+              href="https://github.com/ezekiellopez" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="inline-flex items-center justify-center px-8 py-4 bg-slate-800 text-white font-semibold rounded-lg hover:bg-slate-700 transition-colors duration-200 shadow-lg border border-slate-600"
+            >
+              <GitHub size={20} className="mr-2" />
+              View Work
+            </a>
           </div>
 
-          <div className="flex justify-center gap-6">
-            <a href="mailto:ezekiel.lopez@example.com" className="btn btn-lg bg-base-100 text-primary hover:bg-base-200 border-none">
-              <Mail size={24} />
-              Contact Me
-            </a>
-            <a href="https://github.com/ezekiellopez" target="_blank" rel="noopener noreferrer" className="btn btn-lg btn-outline text-base-100 border-base-100 hover:bg-base-100 hover:text-primary">
-              <GitHub size={24} />
-              GitHub
-            </a>
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 sm:gap-8">
+            <div className="text-center">
+              <div className="w-12 h-12 bg-green-600/20 rounded-lg flex items-center justify-center mx-auto mb-3">
+                <Award size={24} className="text-green-400" />
+              </div>
+              <p className="text-slate-300 font-medium">Problem Solver</p>
+            </div>
+            <div className="text-center">
+              <div className="w-12 h-12 bg-purple-600/20 rounded-lg flex items-center justify-center mx-auto mb-3">
+                <Users size={24} className="text-purple-400" />
+              </div>
+              <p className="text-slate-300 font-medium">Team Player</p>
+            </div>
+            <div className="text-center">
+              <div className="w-12 h-12 bg-orange-600/20 rounded-lg flex items-center justify-center mx-auto mb-3">
+                <Briefcase size={24} className="text-orange-400" />
+              </div>
+              <p className="text-slate-300 font-medium">Results Driven</p>
+            </div>
           </div>
         </div>
       </div>
 
       {/* Skills Section */}
-      <div className="py-20 px-4">
+      <div className="py-16 sm:py-24 px-4 bg-slate-800">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-5xl font-bold text-base-100 text-center mb-16">Why Hire Me?</h2>
+          <div className="text-center mb-16">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">
+              Why Choose Me?
+            </h2>
+            <p className="text-lg text-slate-400 max-w-2xl mx-auto">
+              I bring a unique combination of technical expertise and business acumen to every project.
+            </p>
+          </div>
           
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div className="bg-base-100/10 backdrop-blur-sm rounded-xl p-8 border border-base-100/20">
-              <div className="flex items-center mb-4">
-                <Code size={32} className="text-base-100 mr-3" />
-                <h3 className="text-2xl font-bold text-base-100">Full-Stack Development</h3>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
+            <div className="bg-slate-700/50 rounded-xl p-6 sm:p-8 border border-slate-600/30 hover:border-slate-500/50 transition-colors duration-200">
+              <div className="flex items-start mb-4">
+                <div className="w-10 h-10 bg-blue-600/20 rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
+                  <Code size={20} className="text-blue-400" />
+                </div>
+                <div>
+                  <h3 className="text-xl font-bold text-white mb-2">Full-Stack Expertise</h3>
+                  <p className="text-slate-300 leading-relaxed">
+                    Proficient in React, Node.js, Python, TypeScript, and modern web technologies. 
+                    I build scalable applications from frontend to backend with clean, maintainable code.
+                  </p>
+                </div>
               </div>
-              <p className="text-base-100/80 leading-relaxed">
-                Proficient in React, Node.js, Python, TypeScript, and modern web technologies. 
-                I build scalable applications from frontend to backend.
-              </p>
             </div>
 
-            <div className="bg-base-100/10 backdrop-blur-sm rounded-xl p-8 border border-base-100/20">
-              <div className="flex items-center mb-4">
-                <Zap size={32} className="text-base-100 mr-3" />
-                <h3 className="text-2xl font-bold text-base-100">Quick Adaptation</h3>
+            <div className="bg-slate-700/50 rounded-xl p-6 sm:p-8 border border-slate-600/30 hover:border-slate-500/50 transition-colors duration-200">
+              <div className="flex items-start mb-4">
+                <div className="w-10 h-10 bg-green-600/20 rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
+                  <Award size={20} className="text-green-400" />
+                </div>
+                <div>
+                  <h3 className="text-xl font-bold text-white mb-2">Problem-First Approach</h3>
+                  <p className="text-slate-300 leading-relaxed">
+                    I don't just write code—I solve business problems. I analyze requirements, 
+                    optimize performance, and deliver solutions that drive measurable results.
+                  </p>
+                </div>
               </div>
-              <p className="text-base-100/80 leading-relaxed">
-                I rapidly learn new technologies and frameworks. Give me a challenge, 
-                and I'll master whatever tools are needed to deliver results.
-              </p>
             </div>
 
-            <div className="bg-base-100/10 backdrop-blur-sm rounded-xl p-8 border border-base-100/20">
-              <div className="flex items-center mb-4">
-                <Award size={32} className="text-base-100 mr-3" />
-                <h3 className="text-2xl font-bold text-base-100">Problem-First Thinking</h3>
+            <div className="bg-slate-700/50 rounded-xl p-6 sm:p-8 border border-slate-600/30 hover:border-slate-500/50 transition-colors duration-200">
+              <div className="flex items-start mb-4">
+                <div className="w-10 h-10 bg-purple-600/20 rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
+                  <Users size={20} className="text-purple-400" />
+                </div>
+                <div>
+                  <h3 className="text-xl font-bold text-white mb-2">Collaborative Leader</h3>
+                  <p className="text-slate-300 leading-relaxed">
+                    Strong communicator who thrives in team environments. I believe great 
+                    software is built through collaboration, knowledge sharing, and clear communication.
+                  </p>
+                </div>
               </div>
-              <p className="text-base-100/80 leading-relaxed">
-                I don't just write code—I solve business problems. I analyze requirements, 
-                optimize performance, and deliver solutions that drive real value.
-              </p>
             </div>
 
-            <div className="bg-base-100/10 backdrop-blur-sm rounded-xl p-8 border border-base-100/20">
-              <div className="flex items-center mb-4">
-                <Users size={32} className="text-base-100 mr-3" />
-                <h3 className="text-2xl font-bold text-base-100">Collaboration</h3>
+            <div className="bg-slate-700/50 rounded-xl p-6 sm:p-8 border border-slate-600/30 hover:border-slate-500/50 transition-colors duration-200">
+              <div className="flex items-start mb-4">
+                <div className="w-10 h-10 bg-orange-600/20 rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
+                  <Briefcase size={20} className="text-orange-400" />
+                </div>
+                <div>
+                  <h3 className="text-xl font-bold text-white mb-2">Reliable Delivery</h3>
+                  <p className="text-slate-300 leading-relaxed">
+                    I deliver on commitments and take ownership of my work. You can count 
+                    on me to meet deadlines while maintaining high code quality standards.
+                  </p>
+                </div>
               </div>
-              <p className="text-base-100/80 leading-relaxed">
-                Strong communicator who thrives in team environments. I believe great 
-                software is built through collaboration and shared knowledge.
-              </p>
-            </div>
-
-            <div className="bg-base-100/10 backdrop-blur-sm rounded-xl p-8 border border-base-100/20">
-              <div className="flex items-center mb-4">
-                <Coffee size={32} className="text-base-100 mr-3" />
-                <h3 className="text-2xl font-bold text-base-100">Reliable & Dedicated</h3>
-              </div>
-              <p className="text-base-100/80 leading-relaxed">
-                I deliver on commitments and take ownership of my work. You can count 
-                on me to meet deadlines and maintain high code quality standards.
-              </p>
-            </div>
-
-            <div className="bg-base-100/10 backdrop-blur-sm rounded-xl p-8 border border-base-100/20">
-              <div className="flex items-center mb-4">
-                <Star size={32} className="text-base-100 mr-3" />
-                <h3 className="text-2xl font-bold text-base-100">Continuous Learning</h3>
-              </div>
-              <p className="text-base-100/80 leading-relaxed">
-                The tech industry evolves rapidly, and so do I. I stay current with 
-                best practices, emerging technologies, and industry trends.
-              </p>
             </div>
           </div>
         </div>
       </div>
 
-      {/* Call to Action */}
-      <div className="py-20 px-4">
+      {/* Tech Stack Section */}
+      <div className="py-16 sm:py-24 px-4 bg-slate-900">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-5xl font-bold text-base-100 mb-8">Ready to Build Something Amazing?</h2>
-          <p className="text-xl text-base-100/80 mb-12 max-w-2xl mx-auto">
+          <h2 className="text-3xl sm:text-4xl font-bold text-white mb-8">
+            Technical Skills
+          </h2>
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 sm:gap-6">
+            {['React', 'Node.js', 'TypeScript', 'Python', 'PostgreSQL', 'AWS', 'Docker', 'Git'].map((tech) => (
+              <div key={tech} className="bg-slate-800 rounded-lg p-4 border border-slate-700">
+                <p className="text-slate-300 font-medium">{tech}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+
+      {/* Contact Section */}
+      <div className="py-16 sm:py-24 px-4 bg-slate-800">
+        <div className="max-w-2xl mx-auto text-center">
+          <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6">
+            Let's Build Something Great
+          </h2>
+          <p className="text-lg sm:text-xl text-slate-300 mb-12 leading-relaxed">
             I'm actively seeking new opportunities where I can contribute to meaningful projects 
-            and grow alongside a talented team. Let's discuss how I can help your company succeed.
+            and grow alongside a talented team.
           </p>
           
-          <div className="bg-base-100/10 backdrop-blur-sm rounded-xl p-8 max-w-md mx-auto border border-base-100/20">
-            <h3 className="text-2xl font-bold text-base-100 mb-4">Get In Touch</h3>
-            <p className="text-base-100/80 mb-6">
-              I respond to all inquiries within 24 hours
-            </p>
-            <div className="space-y-4">
-              <a href="mailto:ezekiel.lopez@example.com" className="btn btn-lg w-full bg-base-100 text-primary hover:bg-base-200 border-none">
-                <Mail size={24} />
+          <div className="bg-slate-700/50 rounded-2xl p-6 sm:p-8 border border-slate-600/30 max-w-md mx-auto">
+            <div className="mb-6">
+              <h3 className="text-xl font-bold text-white mb-2">Ready to Connect?</h3>
+              <p className="text-slate-400">
+                I respond to all inquiries within 24 hours
+              </p>
+            </div>
+            <div className="space-y-3">
+              <a 
+                href="mailto:ezekiel.lopez@example.com" 
+                className="flex items-center justify-center w-full px-6 py-4 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition-colors duration-200"
+              >
+                <Mail size={20} className="mr-2" />
                 ezekiel.lopez@example.com
               </a>
-              <a href="https://github.com/ezekiellopez" target="_blank" rel="noopener noreferrer" className="btn btn-lg w-full btn-outline text-base-100 border-base-100 hover:bg-base-100 hover:text-primary">
-                <GitHub size={24} />
-                View My Work
+              <a 
+                href="https://github.com/ezekiellopez" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="flex items-center justify-center w-full px-6 py-4 bg-slate-600 text-white font-semibold rounded-lg hover:bg-slate-500 transition-colors duration-200"
+              >
+                <GitHub size={20} className="mr-2" />
+                View My Projects
               </a>
             </div>
           </div>
+        </div>
+      </div>
+
+      {/* Footer */}
+      <div className="py-8 px-4 bg-slate-900 border-t border-slate-800">
+        <div className="max-w-4xl mx-auto text-center">
+          <p className="text-slate-500">
+            © 2024 Ezekiel Lopez. Available for immediate employment.
+          </p>
         </div>
       </div>
     </div>
