@@ -2,7 +2,7 @@ import { Clock, Star, Zap } from 'react-feather';
 
 const ComingSoon = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-primary to-secondary flex items-center justify-center p-4">
+    <div className="h-svh bg-gradient-to-br from-primary to-secondary flex items-center justify-center p-4">
       <div className="text-center">
         <div className="mb-8">
           <div className="flex justify-center mb-4">
